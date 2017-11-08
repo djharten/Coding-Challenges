@@ -6,12 +6,16 @@ public class SimonSays {
 		Scanner sc = new Scanner(System.in);
 		int commands = sc.nextInt();
 		sc.nextLine();
-		
-		for(int i = 1; i <= commands; i++) {
+		String test = "simon says";
+
+		for (int i = 0; i < commands; i++) {
 			String input = sc.nextLine();
-			String[] inputArray = input.split(" ", 3);
-			if(input.contains("Simon says")) {
-				System.out.println(inputArray[2]);
+			if(input.length() < 11) {
+				System.out.println();
+			} else if (input.substring(0, 10).contains(test)) {
+				System.out.println(input.substring(11));
+			} else {
+				System.out.println();
 			}
 		}
 	}
