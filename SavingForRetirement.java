@@ -3,24 +3,20 @@ import java.util.Scanner;
 public class SavingForRetirement {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		String input = sc.nextLine();
 		
-		String[] inputList = input.split(" ");
-		int bAge = Integer.parseInt(inputList[0]);
-		int bRetire = Integer.parseInt(inputList[1]);
-		int bSaved = Integer.parseInt(inputList[2]);
-		int aAge = Integer.parseInt(inputList[3]);
-		int aSaved = Integer.parseInt(inputList[4]);
+		int arr[] = new int[5];
 		
-		int totalSaved = (bRetire - bAge) * bSaved;
+		for(int i = 0; i < 5; i++){
+			arr[i] = sc.nextInt();
+		}
+		
+		int totalSaved = (arr[1] - arr[0]) * arr[2];
 		int aAdded = 0;
 		
 		while(totalSaved >= aAdded) {
-			aAdded = aAdded + aSaved;
-			aAge++;
+			aAdded = aAdded + arr[4];
+			arr[3]++;
 		}
-		
-		System.out.println(aAge);
+		System.out.println(arr[3]);
 	}
-
 }
