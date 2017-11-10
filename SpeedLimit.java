@@ -25,7 +25,6 @@ public class SpeedLimit {
 			System.out.println(miles + " miles");
 
 			cases = sc.nextInt();
-
 		}
 	}
 }
