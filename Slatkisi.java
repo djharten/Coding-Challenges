@@ -10,8 +10,6 @@ public class Slatkisi {
 		double roundedNumber = ((price + (0.5*zeros)) / (1*zeros)) * (1*zeros);
 		
 		price = (int) (roundedNumber/zeros)*zeros;
-		
 		System.out.println(price);
 	}
-
 }
