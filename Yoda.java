@@ -53,6 +53,5 @@ public class Yoda {
 		
 		System.out.println(final1);
 		System.out.println(final2);
-
 	}
 }
