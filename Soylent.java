@@ -24,9 +24,6 @@ public class Soylent {
 			if (counter != cases) {
 				calReq = sc.nextInt();
 			}
-
 		}
-
 	}
-
 }
