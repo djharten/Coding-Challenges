@@ -3,13 +3,9 @@ import java.util.Scanner;
 public class OneChickenPerPerson {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
+		int people = sc.nextInt();
+		int chicken = sc.nextInt();
 		
-		String chickens = sc.nextLine();
-		
-		String[] inputList = chickens.split(" ");
-		int people = Integer.parseInt(inputList[0]);
-		int chicken = Integer.parseInt(inputList[1]);
-
 		int total = chicken - people;
 		
 		if(total == 1) {
@@ -23,7 +19,5 @@ public class OneChickenPerPerson {
 			total = total * -1;
 			System.out.println("Dr. Chaz needs " + total + " more pieces of chicken!");
 		}
-
 	}
-
 }
