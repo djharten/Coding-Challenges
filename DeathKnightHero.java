@@ -10,8 +10,6 @@ public class DeathKnightHero {
 
 		int counter = 0;
 		int battlesWon = 0;
-		
-	//	String fight = sc.nextLine();
 
 		while (battles != counter) {
 			String fight = sc.nextLine();
@@ -26,7 +24,6 @@ public class DeathKnightHero {
 
 			counter++;
 		}
-
 		System.out.println(battlesWon);
 	}
 }
