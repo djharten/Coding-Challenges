@@ -18,7 +18,7 @@ public class Cetiri {
 			System.out.println(difTwo+arr[2]);
 		} else if(difOne / 2 == difTwo) {
 			System.out.println(arr[0]+difTwo);
-		} else if(difTwo / 2 == difOne) {
+		} else {
 			System.out.println(arr[1] + difOne);
 		}
 		
