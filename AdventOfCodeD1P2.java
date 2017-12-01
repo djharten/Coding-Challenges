@@ -39,7 +39,6 @@ public class AdventOfCodeD1P2 {
 		
 		for(int i = 0; i < num.length()/2; i++) {
 			if(num.substring(i,i+1).equals(num.substring(count+i, count+i+1))){
-				System.out.println(num.substring(i,i+1) + " " + num.substring(count+i, count+i+1));
 				Integer toNum = Integer.parseInt(num.substring(i,i+1));
 				sum += toNum*2;
 			}
