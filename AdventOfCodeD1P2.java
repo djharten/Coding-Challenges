@@ -1,4 +1,4 @@
-public class AdventOfCode1201 {
+public class AdventOfCodeD1P2 {
 
 	public static void main(String[] args) {
 		String num = "6497139596828982595777779823495157848226849399661913591643699334353664"
