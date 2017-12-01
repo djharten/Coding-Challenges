@@ -1,3 +1,5 @@
+//http://adventofcode.com/2017/day/1
+
 public class AdventOfCodeD1P2 {
 
 	public static void main(String[] args) {
@@ -34,7 +36,6 @@ public class AdventOfCodeD1P2 {
 		
 		int sum = 0;
 		int count = num.length()/2;
-		
 		
 		for(int i = 0; i < num.length()/2; i++) {
 			if(num.substring(i,i+1).equals(num.substring(count+i, count+i+1))){
