@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 import java.io.*;
 
-public class AdventOfCodeD2P1 {
+public class AdventOfCodeD2P2 {
 	public static void main(String[] args) throws FileNotFoundException {
 		
 		Scanner sc = new Scanner(new File("numbers.txt"));
