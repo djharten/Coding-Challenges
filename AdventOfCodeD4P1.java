@@ -1,6 +1,7 @@
 // http://adventofcode.com/2017/day/4
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
 import java.io.*;
 
@@ -21,7 +22,6 @@ public class AdventOfCodeD4P1 {
 
 			while (lineCheck.hasNext()) {
 				String word = lineCheck.next();
-				System.out.println(word);
 				checkWords.add(word);
 			}
 
@@ -30,6 +30,20 @@ public class AdventOfCodeD4P1 {
 			for (int i = 0; i < checkWords.size(); i++) {
 
 				if (checkWords.get(count).equals(checkWords.get(i)) && i != count) {
+					validPass--;
+					break;
+				}
+				
+				String firstWord = checkWords.get(count);
+				String secondWord = checkWords.get(i);
+				
+				char[] firstChar = firstWord.toCharArray();
+				char[] secondChar = secondWord.toCharArray();
+				
+				Arrays.sort(firstChar);
+				Arrays.sort(secondChar);
+				
+				if(Arrays.equals(firstChar, secondChar) && i != count){
 					validPass--;
 					break;
 				}
@@ -44,9 +58,8 @@ public class AdventOfCodeD4P1 {
 				}
 
 			}
-
 			validPass++;
-			count = 0;
+			count = 0;	
 		}
 		System.out.println(validPass);
 	}
