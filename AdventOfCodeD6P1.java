@@ -65,11 +65,9 @@ public class AdventOfCodeD6P1 {
 			lists.add(newList);
 
 			int c = 0;
-			int delta = 0;
 
 			for (int n = 0; n < lists.size(); n++) {
 				if (lists.get(c).equals(lists.get(n)) && c != n) {
-					delta = Math.abs(c - n);
 					check = false;
 					break;
 				} else if (c == lists.size() - 1 && n == lists.size() - 1) {
@@ -82,8 +80,6 @@ public class AdventOfCodeD6P1 {
 
 			}
 			System.out.println(count);
-			System.out.println(delta);
-
 		}
 	}
 }
