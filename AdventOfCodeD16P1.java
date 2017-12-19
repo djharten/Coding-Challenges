@@ -3,7 +3,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 import java.io.*;
 
-public class AoC {
+public class AdventOfCodeD16P1 {
 	public static void main(String[] args) throws FileNotFoundException {
 		Scanner sc = new Scanner(new File("input.txt"));
 
