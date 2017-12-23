@@ -1,7 +1,6 @@
-from operator import itemgetter
-
 a = int(input())
 pairs = list()
+
 for i in range(a):
     pairs.append(input().split())
 
