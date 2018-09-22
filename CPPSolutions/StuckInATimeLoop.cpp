@@ -1,11 +1,13 @@
 #include <iostream>
 
-int main()
-{
-  int num;
-  std::cin >> num;
-  
-  for(int i = 1; i <= num; i++){
-      std::cout << i << " Abracadabra" << std::endl;
-  }
+using std::cout;
+using std::cin;
+using std::endl;
+
+int main(){
+    int a;
+    cin >> a;
+    for(size_t i = 1; i <= a; ++i){
+        cout << i << " Abracadabra" << endl;
+    }
 }
