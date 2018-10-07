@@ -6,11 +6,8 @@ public class ADifferentProblem {
         while(sc.hasNextLong()) {
         long a = sc.nextLong();
         long b = sc.nextLong();
-        
         long dif = Math.abs(a-b);
-        
         System.out.println(dif);
         }
     }
-
 }
