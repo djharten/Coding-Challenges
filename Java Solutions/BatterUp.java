@@ -17,9 +17,6 @@ public class BatterUp {
 				total += count;
 			}
 		}
-		
 		System.out.println(total/atBats);
-		
 	}
-
 }
