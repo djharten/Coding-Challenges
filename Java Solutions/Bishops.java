@@ -1,13 +1,10 @@
 import java.util.Scanner;
 
 public class Bishops {
-
 	public static void main(String[] args) {
-
 		Scanner sc = new Scanner(System.in);
 
 		while (sc.hasNextInt()) {
-			
 			int size = sc.nextInt();
 			
 			if (size == 1) {
@@ -18,5 +15,4 @@ public class Bishops {
 			}
 		}
 	}
-
 }
