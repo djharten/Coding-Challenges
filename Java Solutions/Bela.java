@@ -53,9 +53,7 @@ public class Bela {
 					total += 10;
 				}
 			}
-
 		}
-
 		System.out.println(total);
 	}
 }
