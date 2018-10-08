@@ -5,16 +5,14 @@ public class Bus {
 		Scanner sc = new Scanner(System.in);
 		int cases = sc.nextInt();
 
-		while (cases != 0) {
+		for(int i = 0; i < cases; i++) {
 			int numStops = sc.nextInt();
-
 			int numPassengers = 0;
 
 			for (int i = 1; i <= numStops; i++) {
 				numPassengers = (int) (2 * (numPassengers + 0.5));
 			}
 			System.out.println(numPassengers);
-			cases--;
 		}
 	}
 }
