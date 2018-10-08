@@ -1,18 +1,18 @@
 import java.util.Scanner;
 
-public class AboveAverage {
+public class Bubble {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int cases = sc.nextInt();
 		int sum = 0;
 		
-		while(cases != 0) {
+		for(int i = 0; i < cases; i++) {
 			int numScores = sc.nextInt();
 			double arr[] = new double[numScores];
 			
-			for(int i = 0; i < numScores; i++) {
-				arr[i] = sc.nextInt();
-				sum +=  arr[i];
+			for(int j = 0; j < numScores; j++) {
+				arr[j] = sc.nextInt();
+				sum +=  arr[j];
 			}
 			
 			int avg = sum / numScores;
@@ -29,7 +29,6 @@ public class AboveAverage {
 			System.out.println("%");
 
 			sum = 0;
-			cases--;
 		}
 	}
 }
