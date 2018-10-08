@@ -2,7 +2,6 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class BookingARoom {
-
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
@@ -27,7 +26,5 @@ public class BookingARoom {
 			}
 			System.out.println(myNum);
 		}
-
 	}
-
 }
