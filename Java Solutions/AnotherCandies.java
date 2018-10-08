@@ -8,8 +8,7 @@ public class AnotherCandies {
 
 		for(int i = 0; i < cases; i++){
 
-			int numC = sc.nextInt();
-			
+			int numC = sc.nextInt();		
 			BigInteger sum = BigInteger.ZERO;
 
 			for (int k = 0; k < numC; k++) {
@@ -21,7 +20,6 @@ public class AnotherCandies {
 			} else {
 				System.out.println("NO");
 			}
-
 		}
 	}
 }
