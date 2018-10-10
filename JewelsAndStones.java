@@ -1,8 +1,7 @@
 // Leetcode problem, "Jewels and Stones" : https://leetcode.com/problems/jewels-and-stones/description/
-// Two solutions
+// Three Solutions
 
-// Inefficient way, requires us to compare each character against
-// one another in both strings.
+// Inefficient way, requires us to compare each character against ne another in both strings.
 class Solution {
     public int numJewelsInStones(String J, String S) {
         int count = 0;
@@ -17,10 +16,9 @@ class Solution {
         return count;
     }
     
-    // More efficient way of putting J(defined as all unique characters)
-    // in a string, then checking if the characters in S are contained in
-    // the set
-    class Solution {
+// More efficient way of putting J(defined as all unique characters) in a string, then checking
+// if the characters in S are contained in the set.
+class Solution {
     public int numJewelsInStones(String J, String S) {
         Set<Character> jLet = new HashSet<>();
         for(char c : J.toCharArray()){
@@ -36,4 +34,10 @@ class Solution {
     }
 }
     
+// Replaces every character in S that is not in J ith "" , then returns the length of the string S
+// after every character not in J is removed.
+class Solution {
+    public int numJewelsInStones(String J, String S) {
+        return S.replaceAll("[^" + J + "]", "").length();
+    }
 }
