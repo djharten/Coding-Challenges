@@ -34,7 +34,7 @@ class Solution {
     }
 }
     
-// Replaces every character in S that is not in J ith "" , then returns the length of the string S
+// Replaces every character in S that is not in J with "" , then returns the length of the string S
 // after every character not in J is removed.
 class Solution {
     public int numJewelsInStones(String J, String S) {
