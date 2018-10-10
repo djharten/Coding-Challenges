@@ -1,7 +1,7 @@
 // Leetcode problem, "Jewels and Stones" : https://leetcode.com/problems/jewels-and-stones/description/
 // Three Solutions
 
-// Inefficient way, requires us to compare each character against ne another in both strings.
+// Inefficient way, requires us to compare each character against one another in both strings.
 class Solution {
     public int numJewelsInStones(String J, String S) {
         int count = 0;
