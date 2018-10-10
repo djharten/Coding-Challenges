@@ -16,7 +16,7 @@ class Solution {
         return count;
     }
     
-// More efficient way of putting J(defined as all unique characters) in a string, then checking
+// More efficient way of putting J(defined as all unique characters) in a set, then checking
 // if the characters in S are contained in the set.
 class Solution {
     public int numJewelsInStones(String J, String S) {
