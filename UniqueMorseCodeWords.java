@@ -1,15 +1,16 @@
+// Leetcode Problem, "Unique Morse Code Words": https://leetcode.com/problems/unique-morse-code-words/description/
+
 class Solution {
     public int uniqueMorseRepresentations(String[] words) {
         String[] morseCode = {".-","-...","-.-.","-..",".","..-.","--.","....","..",".---","-.-",".-..", "--",
 		                      "-.","---",".--.","--.-",".-.","...","-","..-","...-",".--","-..-","-.--","--.."};
 		Set<String> unique = new HashSet<>();
-		
 		for(int i = 0; i < words.length; i++) {
-			String word = "";
+			StringBuilder sb = new StringBuilder();
 			for(int j = 0; j < words[i].length(); j++) {
-				word += morseCode[ (char) (words[i].charAt(j) - 97) ];
+				sb.append(morseCode[ (char) (words[i].charAt(j) - 97) ]);
 			}
-			unique.add(word);
+			unique.add(sb.toString());
 		}
 		return unique.size();
     }
