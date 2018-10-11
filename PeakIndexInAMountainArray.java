@@ -1,4 +1,4 @@
-// Leetcode Problem, "Peak Index in a Mountain Array" : 
+// Leetcode Problem, "Peak Index in a Mountain Array" : https://leetcode.com/problems/peak-index-in-a-mountain-array/description/
 // Two solutions
 
 // Puts each value in a list, then uses the Collections class to find the index with the max value. Very slow
