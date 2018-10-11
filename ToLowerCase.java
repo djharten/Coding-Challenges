@@ -2,16 +2,19 @@
 // Two solutions.
 
 
-	// Using java's built in toLowerCase()
+// Using java's built in toLowerCase()
+class Solution {
 	public static String toLowerCase(String str) {
 		return str.toLowerCase();
 	}
+}
 	
 	
-	// The ASCII values of A-Z are 65-90 inclusive, so if the value
-	// of c falls within this range the letter is capital. By adding 32
-	// to that value we obtain the lower case version of that letter.
-	public static String toLowerCaseTwo(String str) {
+// The ASCII values of A-Z are 65-90 inclusive, so if the value
+// of c falls within this range the letter is capital. By adding 32
+// to that value we obtain the lower case version of that letter.
+class Solution {
+    public String toLowerCase(String str) {
 		String toLower = "";
 		for(int i = 0; i < str.length(); i++) {
 			char c = str.charAt(i);
@@ -22,4 +25,5 @@
 			}
 		}
 		return toLower;
-	}
+    }
+}
